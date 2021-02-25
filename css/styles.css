@@ -10121,11 +10121,10 @@ h3 {
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }
-.masterhead .navigation-link {
-  padding: 0px 2px;
-  word-wrap: normal;
-  display: inline-block;
-  font-size: 1.25rem;
+#navlist li {
+  display: inline;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
 }
 .masthead .masthead-avatar {
   width: 15rem;
@@ -10143,11 +10142,10 @@ h3 {
   .masthead .masthead-subheading {
     font-size: 1.5rem;
   }
-  .masterhead .navigation-link {
-    padding: 0px 2px;
-    word-wrap: normal;
-    display: inline-block;
-    font-size: 1.25rem;
+  #navlist li {
+    display: inline;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
   }
 }
 .portfolio .portfolio-item {
