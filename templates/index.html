@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Clarissa Damas</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">{{ portfolio_title }}</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+<ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link" href="{{ nav_en }}">EN</a></li>
+    <li class="nav-item"><a class="nav-link" href="{{ nav_pt }}">PT</a></li>
+</ul>
+    </div>
+</nav>
+
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <img class="masthead-avatar mb-5 rounded-circle" src="static/assets/img/photo.jpeg" alt="Clarissa Damas" />
+        <h1 class="masthead-heading text-uppercase mb-0">{{ texts.name }}</h1>
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <p class="masthead-subheading font-weight-light mb-0">{{ texts.subtitle }}</p>
+    </div>
+</header>
+
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <div class="row justify-content-center mt-5">
+{% for project in projects %}
+<div class="col-md-6 col-lg-4 mb-5">
+    <div class="portfolio-item mx-auto text-center h-100 d-flex flex-column border rounded p-3 shadow-sm">
+        <div class="mb-3">
+            <img class="img-fluid rounded" 
+                 src="static/assets/img/portfolio/{{ project.image }}" 
+                 alt="{{ project.title }}" 
+                 style="height: 200px; object-fit: cover; width: 100%;">
+        </div>
+
+        <h4 class="mt-2">{{ project.title }}</h4>
+        <div class="mb-2">
+            {% if project.tech %}
+                <small class="text-primary fw-bold">{{ project.tech }}</small>
+            {% endif %}
+        </div>
+
+        <p class="small text-muted flex-grow-1">{{ project.description }}</p>
+        
+        <div class="mt-auto">
+            <a href="{{ project.link }}" target="_blank" class="btn btn-outline-dark btn-sm w-100">
+                <i class="fab fa-github"></i> Ver no GitHub
+            </a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+        </div>
+    </div>
+</section>
+
+<div class="copyright py-4 text-center text-white bg-dark">
+    <div class="container"><small>Copyright © Clarissa Damas 2026</small></div>
+</div>
+{% endblock %}

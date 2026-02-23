@@ -1,0 +1,33 @@
+{
+    "portfolio": "Portfolio",
+    "about": "About",
+    "contact": "Contact",
+    "subtitle": "Computational Physics | Java | Python",
+    "portfolio_title": "Portfolio",
+    "about_title": "About",
+    "about_text": "I have 4 years of experience with problem solving and teamwork. Experience developing projects involving Python, Java, and database MySQL. Through my educational experience at Instituto Federal Fluminense, I have learned to build web applications using technologies such as HTML, CSS, JavaScript, SASS, GIT, NumPy, Pandas, and SciPy.",
+    "contact_title": "Contact Me",
+    "projects": [
+        {
+            "title": "Z-score (Statistical Test)",
+            "image": "ZscoreCorrectSize.png",
+            "description": "Statistics is a crucial tool for science, business, and economics. This project makes a statistical test 15x faster than humans and much more secure from mistakes.",
+            "tech": "Python, Pandas",
+            "link": "https://github.com/ClarissaDamas/Z-test"
+        },
+        {
+            "title": "Condensed Matter (Physics)",
+            "image": "CondensedMatterCorrectSize.png",
+            "description": "This project returns the crystal system based on your data about the axes and angles.",
+            "tech": "Java, JDK",
+            "link": "https://github.com/ClarissaDamas/Physics-project"
+        },
+        {
+            "title": "Work order Management",
+            "image": "MySQLCorrectSize.png",
+            "description": "Still under development, this project uses Java and MySQL for a system for controlling Service Order.",
+            "tech": "Java, MySQL",
+            "link": "https://github.com/ClarissaDamas"
+        }
+    ]
+}
