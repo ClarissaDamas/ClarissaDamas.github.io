@@ -1,0 +1,33 @@
+{
+    "portfolio": "Portfólio",
+    "about": "Sobre",
+    "contact": "Contato",
+    "subtitle": "Computational Physics | Java | Python",
+    "portfolio_title": "Portfólio",
+    "about_title": "Sobre",
+    "about_text": "Sou formada em Física e curso Ciência da Computação, com foco em desenvolvimento backend e processamento de dados. Atuo com construção de APIs REST, modelagem de dados e integração de sistemas, utilizando Python e Java. Tenho experiência em projetos reais envolvendo APIs e banco de grafos (Neo4J). Busco atuar em times de produto onde possa contribuir tecnicamente e evoluir em arquitetura e boas práticas.",
+    "contact_title": "Entre em contato",
+    "projects": [
+        {
+            "title": "Z-score (Statistical Test)",
+            "image": "ZscoreCorrectSize.png",
+            "description": "A estatística é uma ferramenta crucial para a ciência, os negócios e a economia. Esse projeto torna um teste estatístico 15x mais rápido do que o realizado por humanos e muito mais seguro contra erros. O projeto encontra o Z-score (número que representa o resultado de um teste estatístico), e informa em que a pontuação se encontra na curva de distribuição normal.Curva usada para analisar e fornecer eficazes resultados de probabilidade sobre erros de medição, pressão arterial, pontuações de QI e outros eventos importantes.",
+            "tech": "Python, Pandas",
+            "link": "https://github.com/ClarissaDamas/Z-test"
+        },
+        {
+            "title": "Condensed Matter (Physics)",
+            "image": "CondensedMatterCorrectSize.png",
+            "description": "This project returns the crystal system based on your data about the axes and angles.",
+            "tech": "Java, JDK",
+            "link": "https://github.com/ClarissaDamas/Physics-project"
+        },
+        {
+            "title": "Work order Management",
+            "image": "MySQLCorrectSize.png",
+            "description": "Still under development, this project uses Java and MySQL for a system for controlling Service Order.",
+            "tech": "Java, MySQL",
+            "link": "https://github.com/ClarissaDamas"
+        }
+    ]
+}

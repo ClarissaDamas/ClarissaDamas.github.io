@@ -10,37 +10,41 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+ /* 1. Definindo a Paleta de Cores (Fica fácil mudar depois) */
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #1abc9c;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #6c757d;
-  --gray-dark: #343a40;
-  --primary: #1abc9c;
-  --secondary: #2c3e50;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bg-color: #fafafa;       /* Fundo muito suave, quase branco */
+    --text-main: #2d3748;      /* Cinza chumbo (muito melhor para leitura que preto puro) */
+    --text-muted: #718096;     /* Cinza mais claro para subtítulos e descrições */
+    --primary-color: #2563eb;  /* Azul "tech" vibrante e profissional */
+    --primary-dark: #1d4ed8;   /* Azul mais escuro para quando passar o mouse */
 }
 
+
+/* 3. Modernizando os Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #111827;            /* Títulos levemente mais escuros que o texto normal */
+    letter-spacing: -0.5px;    /* Deixa as letras um pouquinho mais unidas, visual bem moderno */
+}
+
+/* 4. Links Elegantes */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* 5. Removendo imagens/ícones gigantes que vêm no template padrão */
+.masthead-avatar {
+    max-width: 150px; /* Se tiver uma foto sua, limita o tamanho para não ficar gigante */
+    border-radius: 50%; /* Deixa a foto redonda */
+}
 *,
 *::before,
 *::after {
@@ -58,16 +62,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-body {
-  margin: 0;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-  background-color: #fff;
-}
+
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -79,10 +74,7 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
+
 
 p {
   margin-top: 0;
@@ -158,15 +150,7 @@ sup {
   top: -0.5em;
 }
 
-a {
-  color: #1abc9c;
-  text-decoration: none;
-  background-color: transparent;
-}
-a:hover {
-  color: #117964;
-  text-decoration: underline;
-}
+
 
 a:not([href]):not([class]) {
   color: inherit;
@@ -3919,14 +3903,7 @@ input[type=button].btn-block {
   border-top-right-radius: 0;
 }
 
-.nav-pills .nav-link {
-  border-radius: 0.5rem;
-}
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1abc9c;
-}
+
 
 .nav-fill > .nav-link,
 .nav-fill .nav-item {
@@ -10247,4 +10224,269 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+/* ========================================= */
+/* MEU CSS PERSONALIZADO - VERSÃO MODERNA    */
+/* ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #2563eb;       /* Azul profissional (sem verde!) */
+    --primary-dark: #1d4ed8;  /* Azul mais escuro para hover */
+    --dark: #1f2937;          /* Cinza muito escuro */
+    --dark-soft: #2d3a4f;     /* Cinza azulado */
+    --text: #4b5563;          /* Cinza médio */
+    --text-light: #9ca3af;    /* Cinza claro */
+    --bg-light: #f8fafc;      /* Fundo levemente azulado */
+    --bg-alt: #f1f5f9;        /* Fundo alternado (quebra de cor) */
+    --white: #ffffff;
+    --border: #e2e8f0;        /* Cor de borda */
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== RESET E FONTES ===== */
+body {
+    background-color: var(--bg-light) !important;
+    color: var(--text) !important;
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.masthead-heading, 
+.page-section-heading,
+.navbar-brand,
+.nav-link {
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 700 !important;
+    color: var(--dark) !important;
+    text-transform: none !important;
+}
+
+/* ===== NAVBAR TRANSPARENTE COM BLUR ===== */
+#mainNav {
+    background-color: rgba(31, 41, 55, 0.85) !important; /* dark com transparência */
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+    color: var(--white) !important;
+    font-weight: 500 !important;
+}
+
+#mainNav .nav-link:hover {
+    color: var(--primary) !important;
+}
+
+/* ===== CORES PRIMÁRIAS (TUDO AZUL, NADA VERDE) ===== */
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+}
+
+.divider-custom-line {
+    background-color: var(--primary) !important;
+}
+
+.divider-custom-icon {
+    color: var(--primary) !important;
+}
+
+/* ===== HEADER/HERO SECTION ===== */
+header.masthead {
+    background: linear-gradient(135deg, var(--white) 0%, var(--bg-alt) 100%) !important;
+    color: var(--dark) !important;
+    padding: 120px 0 60px 0 !important;
+}
+
+/* --- NAVBAR: FIX DA ROLAGEM (Onde estava o verde) --- */
+#mainNav {
+    background-color: transparent !important; /* Transparente no topo */
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+/* Quando rola para baixo, o JS aplica estilos ou nós forçamos aqui */
+#mainNav.navbar-shrink, .navbar {
+    background-color: rgba(15, 23, 42, 0.95) !important; /* Azul Mineral Transparente */
+    backdrop-filter: blur(10px);
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+#mainNav .navbar-brand, #mainNav .nav-link {
+    color: var(--white) !important;
+    text-transform: none !important;
+    font-weight: 600 !important;
+}
+
+#mainNav .nav-link:hover, #mainNav .nav-link.active {
+    color: var(--accent-blue) !important; /* Destaque azul ao passar o mouse ou estar na seção */
+    background: none !important;
+}
+
+/* 2. Fix dos Campos de Digitação (Removendo contorno verde) */
+.form-control:focus {
+    border-color: var(--accent-blue) !important;
+    box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25) !important;
+}
+
+/* ===== SEÇÕES ALTERNADAS (QUEBRA DE COR) ===== */
+.page-section:nth-child(even) {
+    background-color: var(--bg-alt) !important;
+}
+
+.page-section:nth-child(odd) {
+    background-color: var(--white) !important;
+}
+
+/* ===== CARDS DE PROJETOS ===== */
+.portfolio-item {
+    background: var(--white) !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    border: 1px solid var(--border) !important;
+    overflow: hidden;
+    height: 100%;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.portfolio-item img {
+    transition: transform 0.3s ease;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.02);
+}
+
+/* ===== BADGES DE SKILLS ===== */
+.skill-badge {
+    background-color: var(--bg-alt) !important;
+    color: var(--dark) !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    border: 1px solid var(--border) !important;
+    transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
+    border-color: var(--primary) !important;
+    transform: translateY(-2px);
+}
+
+/* ===== ESTATÍSTICAS ===== */
+.stats-number {
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+    font-size: 2.5rem !important;
+}
+
+/* ===== BOTÕES SOCIAIS ===== */
+.btn-social {
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    line-height: 40px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-outline-light {
+    border-color: var(--dark) !important;
+    color: var(--dark) !important;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: var(--white) !important;
+    transform: translateY(-2px);
+}
+
+/* ===== IMAGEM DE PERFIL ===== */
+.profile-img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: 4px solid var(--primary) !important;
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.2) !important;
+    transition: all 0.5s ease;
+}
+
+.profile-img:hover {
+    border-radius: 50%;
+    transform: scale(1.02);
+}
+
+/* ===== BORDAS E DIVISORES ===== */
+.border-success {
+    border-color: var(--primary) !important;
+}
+
+.text-success {
+    color: var(--primary) !important;
+}
+
+/* ===== COPYRIGHT ===== */
+.copyright {
+    background-color: var(--dark) !important;
+    color: var(--white) !important;
+}
+
+/* ===== BOTÕES OUTLINE DARK ===== */
+.btn-outline-dark {
+    border-color: var(--primary) !important;
+    color: var(--primary) !important;
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary) !important;
+    color: var(--white) !important;
 }
