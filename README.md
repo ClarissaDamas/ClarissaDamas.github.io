@@ -1,6 +1,5 @@
 # ClarissaDamas.github.io
 
-Você pode acessá-lo com este link.
 
 # SOBRE
 Meu portfólio pessoal, onde exibo informações sobre mim e todos os meus projetos desenvolvidos.
