@@ -18,14 +18,14 @@
         {
             "title": "Condensed Matter (Physics)",
             "image": "CondensedMatterCorrectSize.png",
-            "description": "This project returns the crystal system based on your data about the axes and angles.",
+            "description": "Este projeto retorna o sistema de cristal com base em seus dados sobre eixos e ângulos.",
             "tech": "Java, JDK",
             "link": "https://github.com/ClarissaDamas/Physics-project"
         },
         {
             "title": "Work order Management",
             "image": "MySQLCorrectSize.png",
-            "description": "Still under development, this project uses Java and MySQL for a system for controlling Service Order.",
+            "description": "Ainda em desenvolvimento, este projeto utiliza Java e MySQL para um sistema de controle de Ordem de Serviço.",
             "tech": "Java, MySQL",
             "link": "https://github.com/ClarissaDamas"
         }
