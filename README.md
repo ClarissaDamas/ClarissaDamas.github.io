@@ -27,6 +27,11 @@ The frontend consumes backend endpoints dynamically using asynchronous JavaScrip
 CORS middleware is configured to allow controlled cross-origin communication.
 
 ---
+## Install
+- Clone this repository
+- cd Backend/app
+- python -m uvicorn main:app --reload
+
 
 ## Technologies Used
 
