@@ -1,0 +1,8 @@
+{
+  "header": "Tecnologias & Habilidades",
+  "items": ["Python", "Java", "Docker", "Git", "JavaScript", "Pandas", "MySQL","Metodologias ágeis", "APIs REST", "Neo4j", "Linux", "Banco de dados(MySQL, Neo4j, H2", "HTML", "CSS", "Numpy"],
+  "labels": {
+    "github":"Projetos",
+    "experience":"Anos de experiência "
+  }
+}

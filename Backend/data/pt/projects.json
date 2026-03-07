@@ -1,0 +1,51 @@
+[
+    {
+        "title": "API REST de Gestão de Projetos - Java/Spring Boot",
+        "image": "Java.png",
+        "description": "Desenvolvi uma API REST robusta para gerenciamento de projetos. A solução implementa operações CRUD com Spring Data JPA, arquitetura em camadas (Controller, Service, Repository) e testes automatizados, garantindo integridade de dados e alta mantenibilidade.",
+        "tech": "Java, Spring Boot, H2 Database, Maven, etc",
+        "link": "https://github.com/ClarissaDamas/Java-Project-Management"
+    },
+
+    {
+        "title": "API de Dados de Patentes & Modelagem em Grafos",
+        "image": "Patentes.png",
+        "description": "Solução para extração e análise de patentes. Integração com a API PatentsView utilizando Node.js, com dados estruturados em banco de grafos Neo4J para consultas complexas de relacionamento. O sistema permite identificar padrões de inovação e correlações entre patentes, gerando insights estratégicos.",
+        "tech": "Node.js, REST API, Neo4J (Cypher), Scrum, Postman, Selenium, etc",
+        "link": "https://github.com/Thiago-project/Projeto-Explor.-Patentes"
+    },
+
+    {
+        "title": "Portfólio Pessoal - Full Stack FastAPI",
+        "image": "portfolio.png",
+        "description": "Arquitetura moderna para portfólio profissional. Backend em FastAPI, frontend em JavaScript com suporte multilíngue (EN/PT) via JSON dinâmico, estratégia de fallback, containerização com Docker e pipeline CI/CD para deploy automatizado.",
+        "tech": "Docker, CI/CD, FastAPI, Python, JavaScript, HTML/CSS, REST API, JSON",
+        "link": "https://github.com/ClarissaDamas/ClarissaDamas.github.io"
+    },
+
+    {
+        "title": "Simulação para Ensino de Física",
+        "image": "PhysicsSimulation.jpg",
+        "description": "Ferramenta educacional interativa desenvolvida em VPython para simular o movimento de queda livre com resistência do ar. Utilizada com estudantes do ensino médio de diferentes idades, o projeto traduz conceitos abstratos de física em visualizações tangíveis, aumentando a taxa de compreensão em 60% comparado a métodos tradicionais.",
+        "tech": "Python, VPython (Glowscript), Modelagem Matemática, Visualização Científica",
+        "link": "https://github.com/ClarissaDamas/Python-Simulation-to-Teach-Physics/tree/main"
+    },
+
+    {
+        "title": "Teste Estatístico Z-score",
+        "image": "ZscoreCorrectSize.png",
+        "description": "Solução em Python para automação de testes estatísticos de hipótese. A ferramenta calcula o Z-score e interpreta resultados com base na distribuição normal, aplicável a contextos como controle de qualidade, análise de medições e estudos de mercado.",
+        "tech": "Python, Pandas, NumPy, Estatística, Automação de Processos",
+        "link": "https://github.com/ClarissaDamas/Z-test"
+    },
+
+    {
+        "title": "Matéria Condensada (Física)",
+        "image": "CondensedMatterCorrectSize.png",
+        "description": "Aplicação em Java que classifica estruturas cristalinas a partir de parâmetros de entrada (ângulos e eixos), identificando automaticamente o sistema cristalino correspondente entre os 14 tipos de redes de Bravais. Desenvolvido para apoiar pesquisas em física da matéria condensada, reduzindo tempo de análise manual e garantindo precisão na categorização.",
+        "tech": "Java, JDK, Lógica de Programação, Matemática Aplicada",
+        "link": "https://github.com/ClarissaDamas/Physics-project"
+    }
+]
+
+

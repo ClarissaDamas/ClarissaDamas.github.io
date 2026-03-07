@@ -1,0 +1,51 @@
+[
+{
+  "title": "Java Project Management REST API",
+  "image": "Java.png",
+  "description": "A robust REST API designed for project lifecycle management. This application implements full CRUD operations with Spring Data JPA, utilizing a layered architecture (Controller, Repository, Entity) and automated unit testing to ensure data integrity.",
+  "tech": "Java, Spring Boot, H2 Database, Maven, etc",
+  "link": "https://github.com/ClarissaDamas/Java-Project-Management"
+},
+
+    {
+  "title": "Patent Data API & Graph Modeling",
+  "image": "Patentes.png",
+  "description": "Research project focused on large-scale patent data extraction, graph modeling, and interactive data exploration. The project integrates the PatentsView API using Node.js and stores structured patent relationships in Neo4J for advanced querying and visualization.",
+  "tech": "Node.js, REST API, Neo4J, Selenium, Scrum",
+  "link": "https://github.com/ClarissaDamas/Patent-Data-API-Graph-Modeling"
+
+    },
+
+ {
+        "title": "Personal Portfolio Full Stack API",
+        "image": "portfolio.png",
+        "tech": "CI/CD, Docker, Python, REST API, etc",
+        "description": "Full-stack portfolio built with a decoupled architecture using FastAPI and Vanilla JavaScript. Features RESTful API integration, multi-language support (EN/PT), dynamic JSON-based content management, and a resilient fallback strategy to ensure availability. Includes containerization and CI/CD pipeline for automated deployment.",
+        "link": "https://github.com/ClarissaDamas/ClarissaDamas.github.io"
+    },
+
+    {
+        "title": "Simulation to Teach Physics",
+        "image": "PhysicsSimulation.jpg",
+        "description": "This project demonstrates how Python can be used to simulate drag force in free fall motion. It was originally developed as part of a teaching experiment to help high school students understand real-world physics beyond simplified textbook problems",
+        "tech": "VPython (Glowscript)",
+        "link": "https://github.com/ClarissaDamas/Python-Simulation-to-Teach-Physics/tree/main"
+    },
+
+    {
+        "title": "Z-score (Statistical Test)",
+        "image": "ZscoreCorrectSize.png",
+        "tech": "Python, Pandas",
+        "description": "Statistics is a crucial tool for science, business, and economics. This project makes a statistical test 15x faster than humans and much more secure from mistakes.",
+        "link": "https://github.com/ClarissaDamas/Z-test"
+    },
+
+    {
+        "title": "Condensed Matter (Physics)",
+        "image": "CondensedMatterCorrectSize.png",
+        "description": "This project returns the crystal system based on your data about the axes and angles.",
+        "tech": "Java, JDK",
+        "link": "https://github.com/ClarissaDamas/Physics-project"
+    }
+
+]

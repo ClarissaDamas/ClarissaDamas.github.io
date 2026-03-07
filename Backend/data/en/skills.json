@@ -1,0 +1,10 @@
+{
+  "header": "Technologies & Skills",
+  "items": ["Python", "Docker", "Git", "JavaScript", "Pandas", "MySQL","Java","Agile Methodologies", "API", "Neo4j", "Linux", "database", "HTML", "CSS", "Numpy"],
+  "labels": {
+    "github":"Projects done",
+    "experience":"experience"
+  }
+}
+
+
