@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Personal Portfolio", "pt": "Portfólio Pessoal" },
+  "description": { "en": "The original full-stack version of this portfolio, built with FastAPI and vanilla JavaScript. It explored REST integration, multilingual data, Docker, and CI/CD.", "pt": "A versão full-stack original deste portfólio, construída com FastAPI e JavaScript puro. Explora integração REST, dados multilíngues, Docker e CI/CD." },
+  "tech": ["Astro", "FastAPI", "Python", "CI/CD"],
+  "image": "portfolio",
+  "link": "https://github.com/ClarissaDamas/ClarissaDamas.github.io",
+  "order": 3
+}

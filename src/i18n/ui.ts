@@ -1,39 +1,23 @@
 export const ui = {
   en: {
     pageTitle: 'Clarissa Damas | Backend Developer',
-    nav: {
-      brand: 'Clarissa Damas',
-      home: 'Home',
-      projects: 'Projects',
-      skills: 'Skills',
-      contact: 'Contact',
-      language: 'Português',
-    },
-    hero: {
-      heading: 'Clarissa Damas',
-      role: 'Backend Development | APIs and Integrations',
-      message:
-        'Backend developer with over 7 years of professional experience, a degree in Physics, and studies in Computer Science. I work with maintenance, testing, documentation, and governance of REST APIs, OpenAPI/Swagger contract analysis, and systems integration.',
-      imageAlt: 'Portrait of Clarissa Damas',
-    },
+    description: 'Professional portfolio of Clarissa Damas, a backend developer focused on APIs and system integrations.',
+    nav: { brand: 'Clarissa Damas', projects: 'Projects', skills: 'Skills', contact: 'Contact', language: 'Português' },
+    hero: { eyebrow: 'Backend developer', imageAlt: 'Portrait of Clarissa Damas' },
+    projects: { eyebrow: 'Selected work', title: 'Projects', view: 'View on GitHub' },
+    skills: { eyebrow: 'Technical toolkit', title: 'Skills & technologies' },
+    contact: { eyebrow: 'Let’s talk', title: 'Get in touch', text: 'I am available to talk about backend development, APIs, and systems integration.', emailLabel: 'Send an email' },
+    footer: 'Built with Astro and Bootstrap',
   },
   pt: {
     pageTitle: 'Clarissa Damas | Desenvolvimento Backend e APIs',
-    nav: {
-      brand: 'Clarissa Damas',
-      home: 'Início',
-      projects: 'Portfólio',
-      skills: 'Competências',
-      contact: 'Contato',
-      language: 'English',
-    },
-    hero: {
-      heading: 'Clarissa Damas',
-      role: 'Desenvolvimento Backend | APIs e Integrações',
-      message:
-        'Desenvolvedora com mais de 7 anos de experiência profissional, formação em Física e conhecimentos em Ciência da Computação. Atuo com manutenção, testes, documentação e governança de APIs REST, análise de contratos OpenAPI/Swagger e integração de sistemas.',
-      imageAlt: 'Retrato de Clarissa Damas',
-    },
+    description: 'Portfólio profissional de Clarissa Damas, desenvolvedora backend com foco em APIs e integrações de sistemas.',
+    nav: { brand: 'Clarissa Damas', projects: 'Projetos', skills: 'Competências', contact: 'Contato', language: 'English' },
+    hero: { eyebrow: 'Desenvolvedora backend', imageAlt: 'Retrato de Clarissa Damas' },
+    projects: { eyebrow: 'Trabalhos selecionados', title: 'Projetos', view: 'Ver no GitHub' },
+    skills: { eyebrow: 'Ferramentas técnicas', title: 'Competências e tecnologias' },
+    contact: { eyebrow: 'Vamos conversar', title: 'Entre em contato', text: 'Estou disponível para conversar sobre desenvolvimento backend, APIs e integração de sistemas.', emailLabel: 'Enviar e-mail' },
+    footer: 'Feito com Astro e Bootstrap',
   },
 } as const;
 

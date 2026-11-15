@@ -1,30 +1,29 @@
 {
   "name": "clarissadamas.github.io",
   "version": "1.0.0",
-  "description": "This project is my professional portfolio built using a decoupled full-stack architecture, with an independent backend (FastAPI) and frontend (Vanilla JavaScript + Bootstrap).",
-  "main": "index.js",
+  "description": "Bilingual professional portfolio built with Astro and Bootstrap 5.",
   "scripts": {
-
-  "dev": "astro dev",
-  "build": "astro check && astro build",
-  "check": "astro check",
-  "preview": "astro preview"
-},
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "check": "astro check",
+    "preview": "astro preview"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ClarissaDamas/ClarissaDamas.github.io.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "Clarissa Damas",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ClarissaDamas/ClarissaDamas.github.io/issues"
   },
   "homepage": "https://github.com/ClarissaDamas/ClarissaDamas.github.io#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.12",
+    "@fortawesome/fontawesome-free": "^7.3.1",
     "astro": "^7.4.12",
+    "bootstrap": "^5.3.9",
     "typescript": "^6.0.3"
   }
 }

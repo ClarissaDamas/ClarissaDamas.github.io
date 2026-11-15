@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Condensed Matter Physics", "pt": "Física da Matéria Condensada" },
+  "description": { "en": "A Java application that identifies crystal systems from axes and angle data, supporting the study of Bravais lattices.", "pt": "Uma aplicação Java que identifica sistemas cristalinos a partir de dados de eixos e ângulos, apoiando o estudo de redes de Bravais." },
+  "tech": ["Java", "JDK", "Mathematics"],
+  "image": "condensed-matter",
+  "link": "https://github.com/ClarissaDamas/Physics-project",
+  "order": 6
+}

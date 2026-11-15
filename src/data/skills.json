@@ -1,0 +1,7 @@
+{
+  "items": ["Java", "Spring Boot", "REST APIs", "OpenAPI / Swagger", "Python", "Postman", "Git", "API Governance", "FastAPI", "Neo4j", "MySQL", "Docker"],
+  "stats": [
+    { "value": "7+", "label": { "en": "Years of experience", "pt": "Anos de experiência" } },
+    { "value": "REST APIs", "label": { "en": "Primary focus", "pt": "Foco principal" } }
+  ]
+}

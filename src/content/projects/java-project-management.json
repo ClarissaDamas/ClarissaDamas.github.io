@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Java Project Management REST API", "pt": "API REST de Gestão de Projetos" },
+  "description": { "en": "A robust REST API for project lifecycle management. It implements CRUD operations with Spring Boot, Spring Data JPA, an H2 database, and automated tests in a layered architecture.", "pt": "Uma API REST robusta para gerenciamento de projetos. Implementa operações CRUD com Spring Boot, Spring Data JPA, banco H2 e testes automatizados em uma arquitetura em camadas." },
+  "tech": ["Java", "Spring Boot", "JPA", "H2", "Maven"],
+  "image": "java",
+  "link": "https://github.com/ClarissaDamas/Java-Project-Management",
+  "order": 1
+}

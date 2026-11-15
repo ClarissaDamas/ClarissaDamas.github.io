@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Physics Teaching Simulation", "pt": "Simulação para Ensino de Física" },
+  "description": { "en": "An educational VPython simulation of free fall with air resistance, designed to make abstract physics concepts easier to explore.", "pt": "Uma simulação educacional em VPython de queda livre com resistência do ar, criada para tornar conceitos abstratos de física mais fáceis de explorar." },
+  "tech": ["Python", "VPython", "Physics"],
+  "image": "physics-simulation",
+  "link": "https://github.com/ClarissaDamas/Python-Simulation-to-Teach-Physics/tree/main",
+  "order": 4
+}

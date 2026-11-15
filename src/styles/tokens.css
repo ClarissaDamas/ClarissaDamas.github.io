@@ -1,26 +1,10 @@
 :root {
-  --color-navy: #0f172a;
-  --color-blue: #2563eb;
-  --color-blue-dark: #1d4ed8;
-  --color-background: #f8fafc;
-  --color-surface: #ffffff;
-  --color-surface-alt: #f1f5f9;
-  --color-text: #1f2937;
-  --color-muted: #64748b;
-  --color-border: #e2e8f0;
-
-  --font-sans: Montserrat, Arial, Helvetica, sans-serif;
-
-  --content-width: 70rem;
-  --navbar-height: 4.75rem;
-
-  --space-1: 0.5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2rem;
-  --space-5: 3rem;
-  --space-6: 5rem;
-
-  --shadow-sm: 0 4px 6px -1px rgb(15 23 42 / 10%);
-  --shadow-md: 0 10px 15px -3px rgb(15 23 42 / 15%);
+  --portfolio-navy: #0f2744;
+  --portfolio-blue: #2563eb;
+  --portfolio-blue-dark: #1d4ed8;
+  --portfolio-ink: #1f2937;
+  --portfolio-muted: #64748b;
+  --portfolio-soft: #f1f5f9;
+  --portfolio-border: #e2e8f0;
+  --portfolio-shadow: 0 12px 28px rgb(15 39 68 / 9%);
 }

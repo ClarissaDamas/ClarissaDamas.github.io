@@ -1,0 +1,14 @@
+{
+  "name": "Clarissa Damas",
+  "email": "clarissapdc@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/clarissadamas",
+  "github": "https://github.com/ClarissaDamas",
+  "role": {
+    "en": "Backend Development | APIs and Integrations",
+    "pt": "Desenvolvimento Backend | APIs e Integrações"
+  },
+  "bio": {
+    "en": "Backend developer with over 7 years of professional experience, a degree in Physics, and studies in Computer Science. I work with REST API maintenance, testing, documentation, OpenAPI and Swagger contract analysis, governance, and systems integration.",
+    "pt": "Desenvolvedora com mais de 7 anos de experiência profissional, formação em Física e conhecimentos em Ciência da Computação. Atuo com manutenção, testes, documentação, análise de contratos OpenAPI e Swagger, governança de APIs REST e integração de sistemas."
+  }
+}

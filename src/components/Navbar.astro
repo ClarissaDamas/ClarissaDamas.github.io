@@ -1,65 +1,58 @@
 ---
 import type { Locale } from '../i18n/ui';
+import { localePath } from '../i18n/utils';
 
 interface Props {
   locale: Locale;
-  brand: string;
-  home: string;
-  projects: string;
-  skills: string;
-  contact: string;
-  languageLabel: string;
+  labels: {
+    brand: string;
+    projects: string;
+    skills: string;
+    contact: string;
+    language: string;
+  };
 }
 
-const {
-  locale,
-  brand,
-  home,
-  projects,
-  skills,
-  contact,
-  languageLabel,
-} = Astro.props;
-
-const homePath = locale === 'en' ? '/' : '/pt/';
-const alternateLanguagePath = locale === 'en' ? '/pt/' : '/';
+const { locale, labels } = Astro.props;
+const alternateLocale: Locale = locale === 'en' ? 'pt' : 'en';
 ---
 
-<header class="site-header">
-  <nav class="navbar container" aria-label="Main navigation">
-    <a class="navbar__brand" href={homePath}>{brand}</a>
+<header class="site-header sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark container py-3" aria-label="Main navigation">
+    <a class="navbar-brand fw-bold" href={localePath(locale)}>{labels.brand}</a>
 
-    <div class="navbar__actions">
-      <button type="button" class="navbar__link" data-scroll-target="home">
-        {home}
-      </button>
-      <button type="button" class="navbar__link" data-scroll-target="portfolio">
-        {projects}
-      </button>
-      <button type="button" class="navbar__link" data-scroll-target="skills">
-        {skills}
-      </button>
-      <button type="button" class="navbar__link" data-scroll-target="contact">
-        {contact}
-      </button>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#portfolio-navigation"
+      aria-controls="portfolio-navigation"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <a class="navbar__language" href={alternateLanguagePath}>
-        {languageLabel}
-      </a>
+    <div class="collapse navbar-collapse" id="portfolio-navigation">
+      <div class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <button class="nav-link nav-scroll" type="button" data-scroll-target="projects">{labels.projects}</button>
+        <button class="nav-link nav-scroll" type="button" data-scroll-target="skills">{labels.skills}</button>
+        <button class="nav-link nav-scroll" type="button" data-scroll-target="contact">{labels.contact}</button>
+        <a class="btn btn-outline-light btn-sm ms-lg-3 mt-2 mt-lg-0" href={localePath(alternateLocale)}>
+          {labels.language}
+        </a>
+      </div>
     </div>
   </nav>
 </header>
 
 <script>
+  import 'bootstrap';
+
   document.querySelectorAll<HTMLButtonElement>('[data-scroll-target]').forEach((button) => {
     button.addEventListener('click', () => {
-      const targetId = button.dataset.scrollTarget;
-      const target = targetId ? document.getElementById(targetId) : null;
-
-      target?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+      const target = document.getElementById(button.dataset.scrollTarget ?? '');
+      target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 </script>
