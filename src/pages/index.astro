@@ -1,12 +1,17 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
+import profileImage from '../assets/profile.jpeg';
+import Hero from '../components/Hero.astro';
+import Navbar from '../components/Navbar.astro';
 import { ui } from '../i18n/ui';
+import MainLayout from '../layouts/MainLayout.astro';
 
 const locale = 'en';
 const text = ui[locale];
 ---
 
 <MainLayout locale={locale} title={text.pageTitle}>
-  <h1>{text.heading}</h1>
-  <p>{text.message}</p>
+  <Navbar locale={locale} {...text.nav} />
+  <main>
+    <Hero {...text.hero} image={profileImage} />
+  </main>
 </MainLayout>

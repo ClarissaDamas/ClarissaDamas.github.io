@@ -1,0 +1,46 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  heading: string;
+  role: string;
+  message: string;
+  image: ImageMetadata;
+  imageAlt: string;
+}
+
+const { heading, role, message, image, imageAlt } = Astro.props;
+---
+
+<section class="hero" id="home">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <h1>{heading}</h1>
+      <p class="hero__description">{message}</p>
+
+      <div class="hero__social-links" aria-label="Social links">
+        <a
+          href="https://www.linkedin.com/in/clarissadamas"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/ClarissaDamas"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a href="mailto:clarissapdc@gmail.com">E-mail</a>
+      </div>
+    </div>
+
+    <div class="hero__image-wrapper">
+      <Image class="hero__image" src={image} alt={imageAlt} />
+      <p class="hero__role">{role}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,65 @@
+---
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  locale: Locale;
+  brand: string;
+  home: string;
+  projects: string;
+  skills: string;
+  contact: string;
+  languageLabel: string;
+}
+
+const {
+  locale,
+  brand,
+  home,
+  projects,
+  skills,
+  contact,
+  languageLabel,
+} = Astro.props;
+
+const homePath = locale === 'en' ? '/' : '/pt/';
+const alternateLanguagePath = locale === 'en' ? '/pt/' : '/';
+---
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Main navigation">
+    <a class="navbar__brand" href={homePath}>{brand}</a>
+
+    <div class="navbar__actions">
+      <button type="button" class="navbar__link" data-scroll-target="home">
+        {home}
+      </button>
+      <button type="button" class="navbar__link" data-scroll-target="portfolio">
+        {projects}
+      </button>
+      <button type="button" class="navbar__link" data-scroll-target="skills">
+        {skills}
+      </button>
+      <button type="button" class="navbar__link" data-scroll-target="contact">
+        {contact}
+      </button>
+
+      <a class="navbar__language" href={alternateLanguagePath}>
+        {languageLabel}
+      </a>
+    </div>
+  </nav>
+</header>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-scroll-target]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const targetId = button.dataset.scrollTarget;
+      const target = targetId ? document.getElementById(targetId) : null;
+
+      target?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
+  });
+</script>
