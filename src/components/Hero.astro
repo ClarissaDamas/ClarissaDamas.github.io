@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import profileImage from '../assets/profile.jpeg';
+import type { Locale } from '../i18n/ui';
+
+type Profile = typeof import('../data/profile.json');
+
+interface Props {
+  locale: Locale;
+  eyebrow: string;
+  imageAlt: string;
+  profile: Profile;
+}
+
+const { locale, eyebrow, imageAlt, profile } = Astro.props;
+---
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7 order-2 order-lg-1">
+        <p class="section-eyebrow mb-3">{eyebrow}</p>
+        <h1 class="display-3 fw-bold text-dark-emphasis mb-4">{profile.name}</h1>
+        <p class="hero__copy lead mb-4">{profile.bio[locale]}</p>
+        <div class="d-flex flex-wrap gap-2" aria-label="Social links">
+          <a class="btn btn-primary" href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin-in me-2" aria-hidden="true"></i>LinkedIn
+          </a>
+          <a class="btn btn-outline-primary" href={profile.github} target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-github me-2" aria-hidden="true"></i>GitHub
+          </a>
+          <a class="btn btn-outline-dark" href={`mailto:${profile.email}`}>
+            <i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>E-mail
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 order-1 order-lg-2 text-center">
+        <div class="hero__portrait-wrap">
+          <Image class="hero__portrait" src={profileImage} alt={imageAlt} widths={[320, 560]} sizes="(max-width: 991px) 280px, 360px" />
+        </div>
+        <p class="hero__role mt-3 mb-0">{profile.role[locale]}</p>
+      </div>
+    </div>
+  </div>
+</section>

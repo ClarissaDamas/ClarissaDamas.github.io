@@ -1,0 +1,10 @@
+:root {
+  --portfolio-navy: #0f2744;
+  --portfolio-blue: #2563eb;
+  --portfolio-blue-dark: #1d4ed8;
+  --portfolio-ink: #1f2937;
+  --portfolio-muted: #64748b;
+  --portfolio-soft: #f1f5f9;
+  --portfolio-border: #e2e8f0;
+  --portfolio-shadow: 0 12px 28px rgb(15 39 68 / 9%);
+}

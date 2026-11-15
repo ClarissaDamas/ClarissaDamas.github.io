@@ -1,0 +1,12 @@
+---
+import PortfolioPage from '../../components/PortfolioPage.astro';
+import MainLayout from '../../layouts/MainLayout.astro';
+import { ui } from '../../i18n/ui';
+
+const locale = 'pt';
+const text = ui[locale];
+---
+
+<MainLayout locale={locale} title={text.pageTitle} description={text.description}>
+  <PortfolioPage locale={locale} />
+</MainLayout>

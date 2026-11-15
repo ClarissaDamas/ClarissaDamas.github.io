@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import javaImage from '../assets/projects/java.png';
+import patentsImage from '../assets/projects/patents.png';
+import portfolioImage from '../assets/projects/portfolio.png';
+import physicsSimulationImage from '../assets/projects/physics-simulation.jpg';
+import zScoreImage from '../assets/projects/z-score.png';
+import condensedMatterImage from '../assets/projects/condensed-matter.png';
+import profile from '../data/profile.json';
+import skills from '../data/skills.json';
+import type { Locale } from '../i18n/ui';
+import { ui } from '../i18n/ui';
+import Contact from './Contact.astro';
+import Footer from './Footer.astro';
+import Hero from './Hero.astro';
+import Navbar from './Navbar.astro';
+import ProjectCard from './ProjectCard.astro';
+import Skills from './Skills.astro';
+
+interface Props { locale: Locale; }
+
+const { locale } = Astro.props;
+const text = ui[locale];
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+const projectImages = {
+  java: javaImage,
+  patents: patentsImage,
+  portfolio: portfolioImage,
+  'physics-simulation': physicsSimulationImage,
+  'z-score': zScoreImage,
+  'condensed-matter': condensedMatterImage,
+};
+---
+
+<Navbar locale={locale} labels={text.nav} />
+<main>
+  <Hero locale={locale} {...text.hero} profile={profile} />
+
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="text-center section-heading">
+        <p class="section-eyebrow">{text.projects.eyebrow}</p>
+        <h2>{text.projects.title}</h2>
+      </div>
+      <div class="row g-4">
+        {projects.map((project) => (
+          <div class="col-md-6 col-xl-4">
+            <ProjectCard locale={locale} project={project} image={projectImages[project.data.image]} viewLabel={text.projects.view} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Skills locale={locale} {...text.skills} skills={skills} />
+  <Contact {...text.contact} email={profile.email} linkedin={profile.linkedin} github={profile.github} />
+</main>
+<Footer label={text.footer} />

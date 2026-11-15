@@ -1,0 +1,11 @@
+/* O Astro já oferece configurações prontas. Entao nao vou precisar regras de TypeScript manualmente.
+
+A documentação apresenta três opções:
+- base: configuração básica.
+- strict: verificação mais rigorosa.
+- strictest: ainda mais rigorosa.
+Como vou usar TypeScript e validação de conteúdo, o melhor seria strict. */
+
+{
+  "extends": "astro/tsconfigs/strict"
+}

@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Z-score Statistical Test", "pt": "Teste Estatístico Z-score" },
+  "description": { "en": "A Python tool that automates the Z-score statistical test and helps interpret results based on the normal distribution.", "pt": "Uma ferramenta em Python que automatiza o teste estatístico Z-score e ajuda a interpretar resultados com base na distribuição normal." },
+  "tech": ["Python", "Pandas", "Statistics"],
+  "image": "z-score",
+  "link": "https://github.com/ClarissaDamas/Z-test",
+  "order": 5
+}

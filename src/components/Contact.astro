@@ -1,0 +1,26 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  text: string;
+  emailLabel: string;
+  email: string;
+  linkedin: string;
+  github: string;
+}
+
+const { eyebrow, title, text, emailLabel, email, linkedin, github } = Astro.props;
+---
+
+<section class="section" id="contact">
+  <div class="container text-center contact">
+    <p class="section-eyebrow">{eyebrow}</p>
+    <h2>{title}</h2>
+    <p class="lead text-secondary mx-auto mt-3">{text}</p>
+    <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+      <a class="btn btn-primary btn-lg" href={`mailto:${email}`}><i class="fa-solid fa-envelope me-2" aria-hidden="true"></i>{emailLabel}</a>
+      <a class="btn btn-outline-primary btn-lg" href={linkedin} target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in me-2" aria-hidden="true"></i>LinkedIn</a>
+      <a class="btn btn-outline-dark btn-lg" href={github} target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github me-2" aria-hidden="true"></i>GitHub</a>
+    </div>
+  </div>
+</section>

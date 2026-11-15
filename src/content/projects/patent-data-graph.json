@@ -1,0 +1,8 @@
+{
+  "title": { "en": "Patent Data API & Graph Modeling", "pt": "Dados de Patentes e Modelagem em Grafos" },
+  "description": { "en": "A research project for large-scale patent data extraction, graph modeling, and exploration. It integrates the PatentsView API and stores relationships in Neo4j for advanced querying.", "pt": "Projeto de pesquisa para extração de dados de patentes, modelagem em grafos e exploração de dados. Integra a API PatentsView e armazena relacionamentos no Neo4j para consultas avançadas." },
+  "tech": ["Node.js", "REST APIs", "Neo4j", "Selenium"],
+  "image": "patents",
+  "link": "https://github.com/ClarissaDamas/Patent-Data-API-Graph-Modeling",
+  "order": 2
+}
