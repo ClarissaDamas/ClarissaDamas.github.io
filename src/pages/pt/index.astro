@@ -1,0 +1,12 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { ui } from '../../i18n/ui';
+
+const locale = 'pt';
+const text = ui[locale];
+---
+
+<MainLayout locale={locale} title={text.pageTitle}>
+  <h1>{text.heading}</h1>
+  <p>{text.message}</p>
+</MainLayout>
